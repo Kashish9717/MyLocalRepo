@@ -1,0 +1,122 @@
+🧾 GIT CHEAT-SHEET (BEGINNER FRIENDLY)
+🔹 Basic Navigation
+
+Go to a folder
+cd folder_name
+
+Go back one folder
+cd ..
+
+Check current location
+pwd
+
+Create new folder
+mkdir folder_name
+
+🔹 Repository Setup
+
+Initialize git repository
+git init
+
+Check repository status
+git status
+
+🔹 Staging & Committing
+
+Add all changes
+git add .
+
+Add specific file
+git add filename
+
+Commit changes
+git commit -m "commit message"
+
+🔹 Branch Commands
+
+Check all branches
+git branch
+
+Create new branch
+git branch newbranch
+
+Switch to branch
+git checkout newbranch
+
+Create & switch (shortcut)
+git checkout -b newbranch
+
+Delete branch (after merge)
+git branch -d newbranch
+
+🔹 Remote Repository (GitHub)
+
+Add remote repository
+git remote add origin <repo-link>
+
+Verify remote
+git remote -v
+
+Push to GitHub
+git push -u origin main
+
+Pull latest changes
+git pull origin main
+
+🔹 Working with Pull Requests (PR)
+
+Push branch
+git push -u origin newbranch
+
+Open GitHub
+
+Click Compare & Pull Request
+
+Base → main, Compare → newbranch
+
+Create PR → Merge PR
+
+🔹 Merge Branch (Local)
+
+Switch to main
+git checkout main
+
+Merge branch
+git merge newbranch
+
+🔹 Merge Conflict (Important!)
+
+If you see:
+
+<<<<<<< HEAD
+=======
+>>>>>>> newbranch
+
+
+Steps:
+
+Open the file
+
+Fix the code/content
+
+Remove conflict markers
+
+Save file
+
+Run:
+
+git add .
+git commit -m "Resolved merge conflict"
+
+🔹 Daily Git Flow (Must Remember)
+git status
+git add .
+git commit -m "message"
+git push
+
+🔹 Golden Rules 🧠
+
+✔ Always pull before merge
+✔ Use branches for new features
+✔ Use PRs for clean merging
+✔ Commit small & meaningful changes
