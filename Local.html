@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git & GitHub Cheat-Sheet</title>
 </head>
 <body>
-    <h2>It  is a main branch</h2>
+
+    <h1>Git & GitHub Cheat-Sheet (Beginner Guide)</h1>
+
+    <h2>Basic Commands</h2>
+    <ol>
+        <li>Check if you are in githubdemo folder: <code>cd githubdemo</code></li>
+        <li>Go into any repository folder: <code>cd folder_name</code></li>
+        <li>Exit from repo: <code>cd ..</code></li>
+        <li>Create new repo folder: <code>mkdir newrepo</code></li>
+        <li>Check status: <code>git status</code></li>
+        <li>Add changes: <code>git add .</code></li>
+        <li>Commit changes: <code>git commit -m "your message"</code></li>
+        <li>Check status again (nothing to commit means clean)</li>
+    </ol>
+
+    <h2>New Branch Section</h2>
+    <p>-------------- THIS IS NEW BRANCH ----------</p>
+
+    <h2>Pushing Local Repo to GitHub</h2>
+    <ol>
+        <li>Create a repository on GitHub first</li>
+        <li>Add remote: <code>git remote add origin &lt;repo-link&gt;</code></li>
+        <li>Verify remote: <code>git remote -v</code></li>
+        <li>Check current branch: <code>git branch</code></li>
+        <li>Push to GitHub: <code>git push -u origin main</code></li>
+    </ol>
+
+    <p>
+        Whenever you make changes:<br>
+        <code>git add .</code><br>
+        <code>git commit -m "message"</code><br>
+        <code>git push</code>
+    </p>
+
+    <h2>Learning Branches & Merge</h2>
+    <p>
+        Work on a new branch, push it to GitHub, create a Pull Request,
+        resolve conflicts if any, and merge into main.
+    </p>
+
+    <h2>Merging Using Pull Request</h2>
+    <ol>
+        <li>Push branch: <code>git push -u origin newbranch</code></li>
+        <li>Open GitHub repository</li>
+        <li>Click <b>Compare & Pull Request</b></li>
+        <li>Base: <b>main</b>, Compare: <b>newbranch</b></li>
+        <li>Resolve conflicts if shown</li>
+        <li>Merge Pull Request</li>
+    </ol>
+
 </body>
 </html>
