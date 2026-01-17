@@ -2,46 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Repository</title>
+    <title>Git & GitHub Cheat-Sheet</title>
 </head>
 <body>
-    <h1>Hi, this is local</h1>
 
-    <h2>Git Commands Reference</h2>
+    <h1>Git & GitHub Cheat-Sheet (Beginner Guide)</h1>
+
+    <h2>Basic Commands</h2>
     <ol>
-        <li>Check if you are in <strong>githubdemo</strong> folder: <code>cd githubdemo</code></li>
+        <li>Check if you are in githubdemo folder: <code>cd githubdemo</code></li>
         <li>Go into any repository folder: <code>cd folder_name</code></li>
         <li>Exit from repo: <code>cd ..</code></li>
         <li>Create new repo folder: <code>mkdir newrepo</code></li>
         <li>Check status: <code>git status</code></li>
         <li>Add changes: <code>git add .</code></li>
         <li>Commit changes: <code>git commit -m "your message"</code></li>
-        <li>Check status again: <code>git status</code> (nothing to commit means ready)</li>
+        <li>Check status again (nothing to commit means clean)</li>
     </ol>
 
-    <h3>New Branch Section</h3>
+    <h2>New Branch Section</h2>
     <p>-------------- THIS IS NEW BRANCH ----------</p>
 
-    <h2>Pushing to GitHub</h2>
+    <h2>Pushing Local Repo to GitHub</h2>
     <ol>
-        <li>Initialize: create a repo on GitHub first to get a link</li>
-        <li>Set remote: <code>git remote add origin &lt;link&gt;</code></li>
+        <li>Create a repository on GitHub first</li>
+        <li>Add remote: <code>git remote add origin &lt;repo-link&gt;</code></li>
         <li>Verify remote: <code>git remote -v</code></li>
-        <li>Check branch: <code>git branch</code></li>
+        <li>Check current branch: <code>git branch</code></li>
         <li>Push to GitHub: <code>git push -u origin main</code></li>
     </ol>
-    <p>If you create new files, just do <code>git add</code>, <code>commit</code>, and <code>git push</code>.</p>
+
+    <p>
+        Whenever you make changes:<br>
+        <code>git add .</code><br>
+        <code>git commit -m "message"</code><br>
+        <code>git push</code>
+    </p>
 
     <h2>Learning Branches & Merge</h2>
-    <p>Add changes in the new branch and then merge it into main when ready.</p>
+    <p>
+        Work on a new branch, push it to GitHub, create a Pull Request,
+        resolve conflicts if any, and merge into main.
+    </p>
 
-    <h3>Merging </h3>
-    <ol>
-        <li>create pr request..</li>
-        <li>open github</li>
-        <li>NoW Started Make Compare</li>
-    </ol>
+    <h2>Merging Using Pull Request</h2>
+    
+
 </body>
 </html>
