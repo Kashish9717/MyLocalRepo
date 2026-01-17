@@ -1,28 +1,38 @@
-<h1>HI this is local</h1>
-<p>1. check githubdemo me h yah nhi : cd githubdemo
-    2. cd folder : agr kisi repo me jana hoto
-    3. cd .. : exit from repo
-    4. mkdir newrepo : make new repo
-    5. git status
-    6. git add .
-    7. git commit -m "msg write"
-    8. check status,  if nothing to commit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Repository</title>
+</head>
+<body>
+    <h1>Hi, this is local</h1>
 
-    here
+    <h2>GitHub Demo Commands</h2>
+    <ol>
+        <li>Check if you are in githubdemo folder: <code>cd githubdemo</code></li>
+        <li>Go into any repo folder: <code>cd folder_name</code></li>
+        <li>Exit from repo: <code>cd ..</code></li>
+        <li>Create new repo folder: <code>mkdir newrepo</code></li>
+        <li>Check status: <code>git status</code></li>
+        <li>Add all changes: <code>git add .</code></li>
+        <li>Commit changes: <code>git commit -m "your message"</code></li>
+        <li>Check status again: <code>git status</code> (nothing to commit means ready)</li>
+    </ol>
 
-  LOCAL TO REPO ME PUSH 
-    1.get init 
--> pehle github pr ek Repo make then link milegi...
-    2.make new {set}: git remote add origin <link>
-    3.kya set hua..{verify} : git remote -v 
-    4.tells konsi branch me ho :  git branch
-    5. push krke refresh git hub : git push -u origin main
-=>UPLOAD DONE..
+    <h2>Pushing to Repository</h2>
+    <ol>
+        <li>Initialize repo: first create a GitHub repo to get the link</li>
+        <li>Set remote: <code>git remote add origin &lt;link&gt;</code></li>
+        <li>Verify remote: <code>git remote -v</code></li>
+        <li>Check current branch: <code>git branch</code></li>
+        <li>Push to GitHub: <code>git push -u origin main</code></li>
+    </ol>
+    <p>After creating new files, always do <code>git add</code>, <code>git commit</code>, and <code>git push</code> to update GitHub.</p>
 
-if made new file than => git push 
-whenever do changess do add, commit and git push
+    <h2>Learning Branches & Merge</h2>
+    <p>Work in a new branch, add changes, and merge into main when ready.</p>
 
-
-
-"Learning Branches Merge"
-</p>
+</body>
+</html>
