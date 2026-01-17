@@ -1,31 +1,40 @@
-<h1>HI this is local</h1>
-<p>1. check githubdemo me h yah nhi : cd githubdemo
-    2. cd folder : agr kisi repo me jana hoto
-    3. cd .. : exit from repo
-    4. mkdir newrepo : make new repo
-    5. git status
-    6. git add .
-    7. git commit -m "msg write"
-    8. check status,  if nothing to commit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Repository</title>
+</head>
+<body>
+    <h1>Hi, this is local</h1>
 
-    here
---------------  THIS IS NEW BRANCH ----------
- LOCAL TO REPO ME PUSH 
-    1.get init 
--> pehle github pr ek Repo make then link milegi...
-    2.make new {set}: git remote add origin <link>
-    3.kya set hua..{verify} : git remote -v 
-    4.tells konsi branch me ho :  git branch
-    5. push krke refresh git hub : git push -u origin main
-=>UPLOAD DONE..
+    <h2>Git Commands Reference</h2>
+    <ol>
+        <li>Check if you are in <strong>githubdemo</strong> folder: <code>cd githubdemo</code></li>
+        <li>Go into any repository folder: <code>cd folder_name</code></li>
+        <li>Exit from repo: <code>cd ..</code></li>
+        <li>Create new repo folder: <code>mkdir newrepo</code></li>
+        <li>Check status: <code>git status</code></li>
+        <li>Add changes: <code>git add .</code></li>
+        <li>Commit changes: <code>git commit -m "your message"</code></li>
+        <li>Check status again: <code>git status</code> (nothing to commit means ready)</li>
+    </ol>
 
-if made new file than => git push 
-whenever do changess do add, commit and git push
+    <h3>New Branch Section</h3>
+    <p>-------------- THIS IS NEW BRANCH ----------</p>
 
+    <h2>Pushing to GitHub</h2>
+    <ol>
+        <li>Initialize: create a repo on GitHub first to get a link</li>
+        <li>Set remote: <code>git remote add origin &lt;link&gt;</code></li>
+        <li>Verify remote: <code>git remote -v</code></li>
+        <li>Check branch: <code>git branch</code></li>
+        <li>Push to GitHub: <code>git push -u origin main</code></li>
+    </ol>
+    <p>If you create new files, just do <code>git add</code>, <code>commit</code>, and <code>git push</code>.</p>
 
-
-"Learning Branches Merge"
-=> adding in newbranch and then we will merge it....
-
-
-</p>
+    <h2>Learning Branches & Merge</h2>
+    <p>Add changes in the new branch and then merge it into main when ready.</p>
+</body>
+</html>
